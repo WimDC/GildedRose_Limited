@@ -24,6 +24,14 @@ class GildedRoseTest {
 
 
     @Test
+        // Quality of an item can never be negative
+    void potentialNegativeQualityTest() {
+        Item[] items = new Item[] {new Item("Elixir of the Mongoose", 5, 0) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(0, app.items[0].quality);
+    }
+    @Test
         // SellIn value has to be decreased by 1 to all products except for Sulfuras
     void sellInChangeTest() {
         Item[] items = new Item[] { new Item("Aged Brie", 0, 4) };
