@@ -92,6 +92,7 @@ class GildedRoseTest {
         // Backstage Passes increase in value:
         // +1 when sellIn > 10, +2 when sellIn between =5 and =10, +3 when sellIn <= 5,
         // quality = 0 when sellIn is negative
+        // quality for products cant exceed past 50
     void backstagePassesSellinFiveorLessMaxTest() {
         Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 3, 49) };
         GildedRose app = new GildedRose(items);
@@ -102,6 +103,7 @@ class GildedRoseTest {
         // Backstage Passes increase in value:
         // +1 when sellIn > 10, +2 when sellIn between =5 and =10, +3 when sellIn <= 5
         // quality = 0 when sellIn is negative
+        // quality for products cant exceed past 50
     void backstagePassesSellinBetweenTenAndSixMaxTest() {
         Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 7, 49) };
         GildedRose app = new GildedRose(items);
@@ -112,6 +114,7 @@ class GildedRoseTest {
         // Backstage Passes increase in value:
         // +1 when sellIn > 10, +2 when sellIn between =5 and =10, +3 when sellIn <= 5
         // quality = 0 when sellIn is negative
+        // quality for products cant exceed past 50
     void backstagePassesNegativeSellin() {
         Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", -5, 49) };
         GildedRose app = new GildedRose(items);
@@ -122,6 +125,7 @@ class GildedRoseTest {
         // Backstage Passes increase in value:
         // +1 when sellIn > 10, +2 when sellIn between =5 and =10, +3 when sellIn <= 5
         // quality = 0 when sellIn is negative
+        // quality for products cant exceed past 50
     void backstagePassesSellinFiveorLess() {
         Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 3, 40) };
         GildedRose app = new GildedRose(items);
@@ -132,6 +136,7 @@ class GildedRoseTest {
         // Backstage Passes increase in value:
         // +1 when sellIn > 10, +2 when sellIn between =5 and =10, +3 when sellIn <= 5
         // quality = 0 when sellIn is negative
+        // quality for products cant exceed past 50
     void backstagePassesSellinBetweenTenAndSix() {
         Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 7, 40)};
         GildedRose app = new GildedRose(items);
